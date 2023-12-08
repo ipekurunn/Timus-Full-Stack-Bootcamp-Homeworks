@@ -131,18 +131,48 @@ metotları ve özellikleri paylaşmasını mümkün kılar. Bir nesnenin prototi
 ## Array Methodları
 ### Eleman ekle-çıkar
 Push-sona ekler
-
+```javascript
+var sports = ['basketball', 'football', 'tennis' ];
+console.log(sports); // basketball, football, tennis
+sports.push('baseball');
+console.log(sports); // basketball, football, tennis, baseball
+```
 Unshift-başa ekler
-
+```javascript
+var sports = ['basketball', 'football', 'tennis' ];
+console.log(sports); // basketball, football, tennis
+sports.unshift('baseball');
+console.log(sports); // baseball, basketball, football, tennis
+```
 Pop-sondan siler
-
+```javascript
+var sports = ['basketball', 'football', 'tennis' ];
+console.log(sports); // basketball, football, tennis
+sports.pop();
+console.log(sports); // basketball, football
+```
 Shift-baştan siler.
+```javascript
+var sports = ['basketball', 'football', 'tennis' ];
+console.log(sports);  // basketball, football, tennis
+sports.shift();
+console.log(sports);  // football, tennis
+```
 
 Splice-Belirli bir konuma eleman ekle,çıkar, değiştir.
-
-Spread operatör – Dizi veya nesnenin elemanlarını başka bir dizi veya nesneye ekler.
-
+```javascript
+var sports = ['basketball', 'football', 'tennis' ];
+console.log(sports); // basketball, football, tennis
+sports.splice(1,0,'baseball');
+console.log(sports); // basketball, baseball, football, tennis
+```
 Slice-Belirli bir aralığı kopyalar.
+```javascript
+var sports = ['basketball', 'football', 'tennis'];
+var slicedSports = sports.slice(1, 3);
+console.log(slicedSports); //football, tennis
+```
+Spread operatör – Dizi veya nesnenin elemanlarını başka bir dizi veya nesneye ekler.
 ### Birleştirme
 Concat- 2 veya daha fazla diziyi birleştirir.
 
